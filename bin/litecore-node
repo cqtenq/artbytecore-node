@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var artbytecore = require('../lib/cli/bitcore');
+artbytecore();
