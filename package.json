@@ -2,7 +2,7 @@
   "name": "artbytecore-node",
   "description": "Full node with extended capabilities using ArtBytecore and ArtByte Core",
   "author": "BitPay <dev@bitpay.com>",
-  "version": "3.1.12",
+  "version": "3.1.14",
   "main": "./index.js",
   "repository": "git://github.com/Bushstar/artbytecore-node.git",
   "homepage": "https://github.com/Bushstar/artbytecore-node",
@@ -24,6 +24,10 @@
     {
       "name": "Patrick Nagurny",
       "email": "patrick@bitpay.com"
+    },
+    {
+      "name": "Peter Bushnell",
+      "email": "bushsolo@gmail.com"
     }
   ],
   "bin": {
@@ -31,6 +35,7 @@
     "artbyted": "./bin/artbyted"
   },
   "scripts": {
+    "preinstall": "./scripts/download",
     "test": "mocha -R spec --recursive",
     "jshint": "jshint --reporter=node_modules/jshint-stylish ./lib",
     "coverage": "istanbul cover _mocha -- --recursive",
