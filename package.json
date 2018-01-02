@@ -4,8 +4,8 @@
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.1.16",
   "main": "./index.js",
-  "repository": "git://github.com/Bushstar/artbytecore-node.git",
-  "homepage": "https://github.com/Bushstar/artbytecore-node",
+  "repository": "git://github.com/cqtenq/artbytecore-node.git",
+  "homepage": "https://github.com/cqtenq/artbytecore-node",
   "bugs": {
     "url": "https://github.com/Bushstar/artbytecore-node/issues"
   },
@@ -32,7 +32,7 @@
   ],
   "bin": {
     "artbytecore-node": "./bin/artbytecore-node",
-    "artbyted": "./bin/artbyted"
+    "artbyted": "./bin/whitecoind"
   },
   "scripts": {
     "preinstall": "./scripts/download",
@@ -42,13 +42,13 @@
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "tags": [
-    "artbyte",
-    "artbyted"
+    "whitecoin",
+    "whitecoind"
   ],
   "dependencies": {
     "async": "^1.3.0",
     "artbyted-rpc": "^0.7.1",
-    "artbytecore-lib": "^0.13.22",
+    "artbytecore-lib": "^2.3.1",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
     "commander": "^2.8.1",

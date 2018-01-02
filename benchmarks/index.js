@@ -5,7 +5,7 @@ var bitcoin = require('bitcoin');
 var async = require('async');
 var maxTime = 20;
 
-console.log('ArtByten Service native interface vs. ArtByte JSON RPC interface');
+console.log('ArtByten Service native interface vs. Whitecoin JSON RPC interface');
 console.log('----------------------------------------------------------------------');
 
 // To run the benchmarks a fully synced Bitcore Core directory is needed. The RPC comands
@@ -28,7 +28,7 @@ var fixtureData = {
 
 var bitcoind = require('../').services.Bitcoin({
   node: {
-    datadir: process.env.HOME + '/.applebyte',
+    datadir: process.env.HOME + '/.whitecoin-xwc',
     network: {
       name: 'testnet'
     }
@@ -43,18 +43,18 @@ bitcoind.start(function(err) {
   if (err) {
     throw err;
   }
-  console.log('ArtByte Core started');
+  console.log('Whitecoin Core started');
 });
 
 bitcoind.on('ready', function() {
 
-  console.log('ArtByte Core ready');
+  console.log('Whitecoin Core ready');
 
   var client = new bitcoin.Client({
     host: 'localhost',
     port: 18607,
-    user: 'bitcoin',
-    pass: 'local321'
+    user: 'xwc',
+    pass: 'whilecoin234'
   });
 
   async.series([
