@@ -1,13 +1,13 @@
 {
   "name": "artbytecore-node",
-  "description": "Full node with extended capabilities using ArtBytecore and ArtByte Core",
+  "description": "Full node with extended capabilities using Whitecoin",
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.1.16",
   "main": "./index.js",
   "repository": "git://github.com/cqtenq/artbytecore-node.git",
   "homepage": "https://github.com/cqtenq/artbytecore-node",
   "bugs": {
-    "url": "https://github.com/Bushstar/artbytecore-node/issues"
+    "url": "https://github.com/cqtenq/artbytecore-node/issues"
   },
   "contributors": [
     {
